@@ -1,6 +1,6 @@
 {
-  "name": "photoswipe",
-  "version": "5.3.7",
+  "name": "imageswipee",
+  "version": "1.0.0",
   "main": "dist/photoswipe.esm.js",
   "style": "dist/photoswipe.css",
   "type": "module",
@@ -43,7 +43,7 @@
     "watch-css": "chokidar \"src/*.css\" --command \"npm run build-css\"",
     "watch-docs": "cd demo-docs-website/ && npm start",
     "watch-docs-local": "cd demo-docs-website/ && npm start -- --host 192.168.1.120",
-    "copy-to-dist": "copyfiles -f demo-docs-website/static/photoswipe/* dist/ && copyfiles -f demo-docs-website/static/photoswipe/umd/* dist/umd/",
+    "copy-to-dist": "copyfiles -f demo-docs-website/static/photoswipe/* dist/",
     "lint": "eslint src/js/**/*.js",
     "lint-auto-fix": "eslint src/js/**/*.js --fix",
     "test": "npm run lint",
@@ -66,13 +66,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/dimsemenov/Photoswipe.git"
+    "url": "git://github.com/kratosvn/imageswipee.git"
   },
   "description": "JavaScript gallery",
   "bugs": {
-    "url": "https://github.com/dimsemenov/Photoswipe/issues"
+    "url": "https://github.com/kratosvn/imageswipee/issues"
   },
-  "homepage": "https://photoswipe.com",
+  "homepage": "https://imageswipee.com",
   "keywords": [
     "gallery",
     "lightbox",

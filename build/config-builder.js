@@ -66,27 +66,3 @@ export const minCoreJS = {
   },
   plugins: [getMinifyPlugin()]
 };
-
-// UMD config
-const umdBaseOutputDir = 'demo-docs-website/static/photoswipe/umd/';
-export const umdMinLightboxJS = {
-  input: 'src/js/lightbox/lightbox.js',
-  output: {
-    name: 'PhotoSwipeLightbox',
-    banner: getBanner('PhotoSwipe Lightbox'),
-    file: umdBaseOutputDir + 'photoswipe-lightbox.umd.min.js',
-    format: 'umd'
-  },
-  plugins: [getMinifyPlugin()]
-};
-
-export const umdMinCoreJS = {
-  input: 'src/js/photoswipe.js',
-  output: {
-    name: 'PhotoSwipe',
-    banner: getBanner('PhotoSwipe'),
-    file: umdBaseOutputDir + 'photoswipe.umd.min.js',
-    format: 'umd',
-  },
-  plugins: [getMinifyPlugin()]
-};

@@ -96,6 +96,7 @@ class Keyboard {
     let isForward = false;
     const isKeySupported = 'key' in e;
 
+    // @ts-ignore
     switch (isKeySupported ? e.key : e.keyCode) {
       case getKeyboardEventKey('Escape', isKeySupported):
         if (pswp.options.escKey) {

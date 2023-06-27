@@ -157,12 +157,15 @@ function decodeImage(img) {
     return img.decode().catch(() => {});
   }
 
+  // @ts-ignore
   if (img.complete) {
     return Promise.resolve(img);
   }
 
   return new Promise((resolve, reject) => {
+    // @ts-ignore
     img.onload = () => resolve(img);
+    // @ts-ignore
     img.onerror = reject;
   });
 }
@@ -2952,6 +2955,7 @@ class Keyboard {
     let isForward = false;
     const isKeySupported = 'key' in e;
 
+    // @ts-ignore
     switch (isKeySupported ? e.key : e.keyCode) {
       case getKeyboardEventKey('Escape', isKeySupported):
         if (pswp.options.escKey) {
